@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My eBook Store</title>
+  <title>AI eBook Store</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -56,24 +56,33 @@
       background-color: white;
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      width: 200px;
+      width: 220px;
       padding: 20px;
       text-align: center;
     }
 
     .book img {
       width: 100%;
-      height: 250px;
+      height: 200px;
       object-fit: cover;
       border-radius: 5px;
     }
 
     .book h3 {
       margin: 10px 0;
+      font-size: 18px;
     }
 
     .book p {
       color: #777;
+      font-size: 14px;
+    }
+
+    .book .price {
+      margin: 10px 0;
+      font-weight: bold;
+      color: #333;
+      font-size: 16px;
     }
 
     .book button {
@@ -81,7 +90,6 @@
       color: white;
       border: none;
       padding: 10px 15px;
-      margin-top: 10px;
       cursor: pointer;
       border-radius: 5px;
       font-size: 16px;
@@ -103,54 +111,85 @@
 <body>
 
   <header>
-    <h1>My eBook Store</h1>
+    <h1>AI eBook Store</h1>
     <nav>
       <a href="#home">Home</a>
-      <a href="#books">Books</a>
+      <a href="#books">Courses</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <section class="hero" id="home">
-    <h2>Welcome to Your eBook Store!</h2>
-    <p>Discover amazing books for just $10 each. Start reading today!</p>
+    <h2>Learn AI with Our eBooks!</h2>
+    <p>Get actionable knowledge on AI tools, content creation, and more. Each course is just $10.</p>
   </section>
 
   <section class="books" id="books">
-    <!-- Book 1 -->
     <div class="book">
-      <img src="https://via.placeholder.com/200x250" alt="Book 1">
-      <h3>Book Title 1</h3>
-      <p>Exciting description of Book 1.</p>
-      <p>$10</p>
-      <button onclick="buyBook('Book Title 1')">Buy Now</button>
+      <img src="https://via.placeholder.com/220x200" alt="How to Summarize Documents with AI">
+      <h3>How to Summarize Documents with AI</h3>
+      <p>Learn how to quickly summarize articles, reports, and notes using AI tools.</p>
+      <div class="price">$10</div>
+      <button onclick="buyBook('How to Summarize Documents with AI')">Buy Now</button>
     </div>
-    <!-- Book 2 -->
+
     <div class="book">
-      <img src="https://via.placeholder.com/200x250" alt="Book 2">
-      <h3>Book Title 2</h3>
-      <p>Exciting description of Book 2.</p>
-      <p>$10</p>
-      <button onclick="buyBook('Book Title 2')">Buy Now</button>
+      <img src="https://via.placeholder.com/220x200" alt="How to Create Stunning Images with AI">
+      <h3>How to Create Stunning Images with AI</h3>
+      <p>Discover how to generate professional images for projects, presentations, and social media.</p>
+      <div class="price">$10</div>
+      <button onclick="buyBook('How to Create Stunning Images with AI')">Buy Now</button>
     </div>
-    <!-- Book 3 -->
+
     <div class="book">
-      <img src="https://via.placeholder.com/200x250" alt="Book 3">
-      <h3>Book Title 3</h3>
-      <p>Exciting description of Book 3.</p>
-      <p>$10</p>
-      <button onclick="buyBook('Book Title 3')">Buy Now</button>
+      <img src="https://via.placeholder.com/220x200" alt="How to Learn a New Skill with AI">
+      <h3>How to Learn a New Skill with AI</h3>
+      <p>Master new skills faster using AI-powered learning strategies and tools.</p>
+      <div class="price">$10</div>
+      <button onclick="buyBook('How to Learn a New Skill with AI')">Buy Now</button>
+    </div>
+
+    <div class="book">
+      <img src="https://via.placeholder.com/220x200" alt="How to Budget and Manage Finances with AI">
+      <h3>How to Budget and Manage Finances with AI</h3>
+      <p>Use AI tools to track spending, create budgets, and make smarter financial decisions.</p>
+      <div class="price">$10</div>
+      <button onclick="buyBook('How to Budget and Manage Finances with AI')">Buy Now</button>
+    </div>
+
+    <div class="book">
+      <img src="https://via.placeholder.com/220x200" alt="How to Create Social Media Posts with AI">
+      <h3>How to Create Social Media Posts with AI</h3>
+      <p>Generate engaging content and posts for social media platforms in minutes with AI.</p>
+      <div class="price">$10</div>
+      <button onclick="buyBook('How to Create Social Media Posts with AI')">Buy Now</button>
+    </div>
+
+    <div class="book">
+      <img src="https://via.placeholder.com/220x200" alt="How to Grow a YouTube/Instagram Channel Using AI">
+      <h3>How to Grow a YouTube/Instagram Channel Using AI</h3>
+      <p>Learn AI strategies to grow followers, increase engagement, and create content faster.</p>
+      <div class="price">$10</div>
+      <button onclick="buyBook('How to Grow a YouTube/Instagram Channel Using AI')">Buy Now</button>
+    </div>
+
+    <div class="book">
+      <img src="https://via.placeholder.com/220x200" alt="How to Make AI-Generated Podcasts or Voiceovers">
+      <h3>How to Make AI-Generated Podcasts or Voiceovers</h3>
+      <p>Create professional-sounding podcasts, voiceovers, and audio content using AI tools.</p>
+      <div class="price">$10</div>
+      <button onclick="buyBook('How to Make AI-Generated Podcasts or Voiceovers')">Buy Now</button>
     </div>
   </section>
 
   <footer id="contact">
-    &copy; 2026 My eBook Store. All rights reserved.
+    &copy; 2026 AI eBook Store. All rights reserved.
   </footer>
 
   <script>
     function buyBook(title) {
       alert('You selected "' + title + '". The price is $10.');
-      // Here you can later integrate payment processing like Stripe or PayPal
+      // Later, integrate payment gateway like Stripe or PayPal here
     }
   </script>
 
